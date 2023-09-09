@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 public class LoginTestRunner extends Setup {
-    @Test(priority = 1)
+    @Test(priority = 1 , description = "login Automation")
     public void doLogin() throws IOException, ParseException, InterruptedException {
         LoginPage loginPage=new LoginPage(driver);
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
